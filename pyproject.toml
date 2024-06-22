@@ -1,0 +1,15 @@
+[project]
+name = "pythonmemorymodule"
+dynamic = ["version"]
+description = "pure-python implementation of MemoryModule technique to load a dll or unmanaged exe entirely from memory"
+readme = "README.md"
+
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+write_to = "pythonmemorymodule/_version.py"
+
+[tool.setuptools]
+packages = ["windows","pythonmemorymodule"]
